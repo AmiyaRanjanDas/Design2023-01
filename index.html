@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Design-2023-01</title>
+</head>
+
+<body>
+    <div id="sec1">
+        <div id="home1">
+            <h1 id="op1">DESIGNERS</h1>
+            <h1 id="op2">DESIGNERS</h1>
+            <h1 id="op3">DESIGNERS</h1>
+            <h1 id="op4">DESIGNERS</h1>
+            <h1 id="op5">DESIGNERS</h1>
+        </div>
+    </div>
+
+    <script>
+        let text1 = document.querySelector('#op1');
+        let text2 = document.querySelector('#op2');
+        let text3 = document.querySelector('#op3');
+        let text4 = document.querySelector('#op4');
+        let text5 = document.querySelector('#op5');
+
+        window.addEventListener('scroll', function () {
+            let value = window.scrollY;
+
+            // text1.style.top = 17.2 + value / 21.9 + '%';
+
+            // text2.style.top = 17.2 + value / 21.9 + '%';
+            text2.style.left = 34.5 - value / 68 + '%';
+
+            // text3.style.top = 17.2 + value / 21.9 + '%';
+            text3.style.left = 34.5 + value / 68 + '%';
+
+            // text4.style.top = 17.2 + value / 21.9 + '%';
+            text4.style.left = 34.5 + value / 34 + '%';
+
+            // text5.style.top = 17.2 + value / 21.9 + '%';
+            text5.style.left = 34.5 - value / 34 + '%';
+        })
+    </script>
+
+    <div id="sec2">
+        <div id="home2">
+            <h1 id="op6">DEVELOPER</h1>
+            <h1 id="op7">DEVELOPER</h1>
+            <h1 id="op8">DEVELOPER</h1>
+            <h1 id="op9">DEVELOPER</h1>
+            <h1 id="op10">DEVELOPER</h1>
+        </div>
+    </div>
+
+    <script>
+        let text6 = document.querySelector('#op6');
+        let text7 = document.querySelector('#op7');
+        let text8 = document.querySelector('#op8');
+        let text9 = document.querySelector('#op9');
+        let text10 = document.querySelector('#op10');
+
+        window.addEventListener('scroll', function () {
+            let value = window.scrollY;
+            console.log(value);
+            this.scrollY > 4750 ? text7.style.left = 174.1 - value / 34 + '%' : "";
+
+            this.scrollY > 4750 ? text8.style.left = -105.9 + value / 34 + '%' : "";
+
+            this.scrollY > 4750 ? text9.style.left = -36 + value / 68 + '%' : "";
+
+            this.scrollY > 4750 ? text10.style.left = 104.1 - value / 68 + '%' : "";
+            
+        });
+    </script>
+
+    <a href=""><img src="images/home3.png" id="pic1" alt="">    </a>
+    <a href="#sec2"><img src="images/about1.png" id="pic2" alt="">   </a>
+    <a href=""><img src="images/CONTACT2.png" id="pic3" alt=""> </a>
+    <a href=""><img src="images/login.png" id="pic4" alt="">    </a>
+
+    <script>
+        let cir1 = document.querySelector('#pic1');
+        let cir2 = document.querySelector('#pic2');
+        let cir3 = document.querySelector('#pic3');
+        let cir4 = document.querySelector('#pic4');
+
+        window.addEventListener('scroll', function () {
+            let value = window.scrollY;
+
+            cir1.style.transform = "rotate(" + (-(window.pageYOffset/12)) + "deg)";
+            cir2.style.transform = "rotate(" + window.pageYOffset/12 + "deg)";
+            cir3.style.transform = "rotate(" + window.pageYOffset/12 + "deg)";
+            cir4.style.transform = "rotate(" + (-(window.pageYOffset/12)) + "deg)";
+            transform = 'rotate(90deg)';
+
+        });
+    </script>
+
+</body>
+
+</html>

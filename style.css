@@ -1,0 +1,107 @@
+* {
+    padding: 0vw;
+    margin: 0vw;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Courgette&family=Edu+VIC+WA+NT+Beginner&family=Nova+Square&family=Rancho&family=Roboto&family=Tangerine&display=swap');
+#sec1,#sec2{
+    position: relative;
+    height: 580vh;
+    background-color: aqua;
+}
+#sec2{
+    height: 760vh;
+}
+#home1,#home2{
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    overflow: hidden;
+}
+#home2{
+    background-color: #ff0055;
+}
+/* =============================Design Text===================================== */
+/* ============================================================================= */
+#op1,#op2,#op3,#op4,#op5,
+#op6,#op7,#op8,#op9,#op10
+{
+    position: absolute;
+    font-size: 5vw;
+    top: 45%;
+    font-family: Arial, Helvetica, sans-serif;
+    white-space: nowrap;
+    left: 34.5%;
+}
+#op7,#op8,#op9,#op10{
+    left: 34%;
+}
+#op4,#op5{
+    z-index: 6;
+    -webkit-text-stroke-width:0.2vw;
+    -webkit-text-stroke-color: #ff0055;
+    color: transparent;
+}
+#op1{
+    z-index:10;
+    color: white;
+    -webkit-text-stroke-width:0.1vw;
+    -webkit-text-stroke-color: white;
+}
+#op2,#op3{
+    z-index:3;
+    color:cyan;
+}
+#op4,#op5
+{
+    z-index: 2;
+    -webkit-text-stroke-color: #ff0055;
+}
+
+/* ====================================NEW====================================== */
+#op6
+{
+    left: 34%;    
+    color: white;
+    -webkit-text-stroke-width:0.15vw;
+    -webkit-text-stroke-color: white;
+    z-index: 7;
+}
+#op7,#op8{
+    z-index: 1;
+    -webkit-text-stroke-width:0.18vw;
+    -webkit-text-stroke-color: black;
+    color: transparent;
+}
+#op9,#op10
+{
+    z-index: 2;
+    color: cyan;
+}
+
+#pic1,#pic2,#pic3,#pic4{
+    position: fixed;
+    width: 10vw;
+    height: 10vw;
+    border-radius: 50%;
+    top:1.5vw;
+    left: 79vw;
+    z-index: 12;
+}
+#pic2{
+    top: 13vw;
+}
+#pic3{
+    top: 25vw;
+}
+#pic4{
+    top: 36.5vw;
+}
+
+@media screen and (max-width: 500px) {
+    #pic1,#pic2,#pic3,#pic4{
+        display: none;
+    }
+}
